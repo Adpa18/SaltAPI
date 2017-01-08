@@ -50,11 +50,12 @@ La configuration du serveur web est faite grâce à un module. Dès lors, vous p
 ### Les modules sont facilement interchangeables
 
 Le module de logging ne vous plaît pas? Implémentez le votre pour écrire vos logs à plusieurs endroits:
-	* dans un fichier
-	* sur la sortie standard
-	* dans syslog
-	* dans systemd
-	* un envoi par mail ??
+
+* dans un fichier
+* sur la sortie standard
+* dans syslog
+* dans systemd
+* un envoi par mail ??
 
 ### Une requête HTTP mérite beaucoup de soin
 
