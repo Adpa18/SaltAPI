@@ -5944,7 +5944,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+IModuleLoader *Load(path: std::string const &)",
+											"text": "+IModule *Load(path: std::string const &)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -12281,7 +12281,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFZfrBvr+7uTrA="
 									},
-									"name": "IModuleLoader *Load",
+									"name": "IModule *Load",
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
