@@ -61,9 +61,11 @@ Le module de logging ne vous plaît pas? Implémentez le votre pour écrire vos 
 
 Parce qu'elle le vaut bien, une requête HTTP demande un suivi à la fois approprié et personnalisé.
 Pour son traitement délicat, nous avons déjà anticipé ces besoins et lui mettons à disposition des modules:
-	* de décompression
-	* d'exécution de script via CGI
-	* de lecture de fichier
+
+* de décompression
+* d'exécution de script via CGI
+* de lecture de fichier
+
 Elle peut profiter de ces services en les ajoutant à sa convenance sur sa *processing list*.
 
 ### A l'assaut des requêtes simultanées
