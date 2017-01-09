@@ -8,7 +8,7 @@ Une **bonne** API pour le projet HTTPd / Zia {EPITECH} promo 2019
 
 ## Nous suivre
 
-* [Twitter *soon*](https://twitter.com)
+* [Twitter](https://twitter.com/Salt_API)
 * [Github](https://github.com/Adpa18/SaltAPI)
 * [Yammer](https://www.yammer.com/epitech.eu/#/threads/inGroup?type=in_group&feedId=10244128)
 
