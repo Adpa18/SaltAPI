@@ -107,7 +107,7 @@ En voici un exemple:
 m_core.Get("moduleName");
 ```
 
-### Intéragir avec la *processing list* !
+### Interagir avec la *processing list* !
 
 Chaque module HTTP peut accéder et modifier la *processing list* qui traite la requête HTTP courrante.
 Imaginons que lors du traitement d'une requête HTTP, le module `HTTP Request Header Inspector Module` détecte (en lisant les headers) que l'entity (le corps) est compréssée (`Content-Encoding: gzip`).
@@ -116,5 +116,5 @@ Ce module peut donc ajouter un appel au module de décompression après lui dans
 Comme ceci:
 
 ```cpp
-pl->pushAfter(std::bind(&IHTTPHandle::Handle, dynamic_cast<IHTTPHandle>(m_core.Get("DecompressionModule"))), pl->top());
+pl->pushAfter(std::bind(&IHTTPHandle::Handle, dynamic_cast<IHTTPHandle>(m_core.Get("DecompressionModule"))), pl->begin());
 ```
