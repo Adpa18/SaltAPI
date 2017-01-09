@@ -8,7 +8,7 @@ Une **bonne** API pour le projet HTTPd / Zia {EPITECH} promo 2019
 
 ## Nous suivre
 
-* [Twitter *soon*](https://twitter.com)
+* [Twitter](https://twitter.com/Salt_API)
 * [Github](https://github.com/Adpa18/SaltAPI)
 * [Yammer](https://www.yammer.com/epitech.eu/#/threads/inGroup?type=in_group&feedId=10244128)
 
@@ -72,3 +72,24 @@ Elle peut profiter de ces services en les ajoutant à sa convenance sur sa *proc
 
 Avec cette API, la création d'une threadpool gérant le traitement des différentes requêtes HTTP est simplifiée.
 Le serveur doit pouvoir gérer les requêtes des différents clients, c'est pour cela que nous avons prévu dans notre design un traitement multithreadé ce celles-ci.
+
+### Les méthodes liés au protocole HTTP
+
+Voici la liste des modules qui sont en mesure d'intéragir avec les requêtes HTTP:
+
+* HTTP Request Parser (pour sérialiser la requête)
+* HTTP Request Header Inspector (pour inspecter les headers)
+* HTTP Response Representation Generator (pour générer la représentation de la ressource)
+* HoMyCGI (pour l'exécution des scripts via CGI)
+* Compressor (pour compresser/decompresser l'entity du messsage)
+* Network (pour l'envoi de la réponse)
+
+Les méthodes de ces modules reçoivent la requête, la réponse et la *processing list*.
+
+### Hummmm... La *processing list* ?
+
+La *processing list* est une liste qui contient les fonctions qui vont servir à traiter la requête HTTP et générer une réponse appropriée.
+Quand une requête HTTP est reçue par le serveur web, une *processing list* générique est créé.
+Cette *processing list* générique contient par défaut les actions précisées dans le fichier de configuration.
+Les modules de type HTTP (HTTP header inspector, HTTP representation generator, ...) sont dès lors en mesure d'interagir avec cette liste.
+Chaque {requête + réponse} possède sa propre *processing list*.
