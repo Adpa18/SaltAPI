@@ -18,7 +18,7 @@ Une **bonne** API pour le projet HTTPd / Zia {EPITECH} promo 2019
 
 Notre API possède plusieurs propriétés intéressantes.
 
-### Un design modulaire poussé, près pour le futur.
+### Un design modulaire poussé, prêt pour le futur.
 
 Le concept de modularité poussé dans ses derniers retranchements grâce au découpage malin des différentes actions du serveur web en modules.
 Le core même du serveur est proposé en tant que module. La partie réseau est elle aussi proposée en tant que module.
@@ -73,7 +73,7 @@ Elle peut profiter de ces services en les ajoutant à sa convenance sur sa *proc
 ### A l'assaut des requêtes simultanées
 
 Avec cette API, la création d'une threadpool gérant le traitement des différentes requêtes HTTP est simplifiée.
-Le serveur doit pouvoir gérer les requêtes des différents clients, c'est pour cela que nous avons prévu dans notre design un traitement multithreadé ce celles-ci.
+Le serveur doit pouvoir gérer les requêtes des différents clients, c'est pour cela que nous avons prévu dans notre design un traitement multithreadé ce celle-ci.
 
 ### Les méthodes liés au protocole HTTP
 
