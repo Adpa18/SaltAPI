@@ -46,13 +46,6 @@ namespace Module {
         * @return pointer on the module founded
         */
         virtual IModule *Get(IModule::Type type) const = 0;
-
-        /*! @fn T *Get() const
-        * @brief Get the module by T from the list in ModuleLoader
-        * @return pointer on the module founded
-        */
-        template<class T>
-        virtual T *Get() const = 0;
     };
 }
 #endif //API_V2_ICORE_HPP

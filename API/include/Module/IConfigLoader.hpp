@@ -11,8 +11,8 @@
  * @brief This class is for the config
  * It's use to store a pointer of the config in the Core
  * You have to dynamic_cast your IConfig pointer to your Config class
- * @example The config is JSON::Object, JSON::Object inherit from IConfig
- * @example dynamic_cast<JSON::Object>(config_ptr)
+ * @example IConfigClass The config is JSON::Object, JSON::Object inherit from IConfig
+ * @example usage dynamic_cast<JSON::Object>(config_ptr)
  *
  */
 class IConfig {};

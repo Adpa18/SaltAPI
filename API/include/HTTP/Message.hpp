@@ -28,7 +28,7 @@ namespace HTTP {
 
         Header m_header;
 
-        char *m_body;
+        char *m_body = nullptr;
 
         int m_content_length;
 
@@ -39,26 +39,40 @@ namespace HTTP {
          *
          * @return Header reference
          */
-        Header &GetHeader() const;
+        Header &GetHeader();
 
-        /*! @fn char *Body() const
+        /*! @fn char *GetBody() const
          *
          * @return body
          */
-        char *Body() const;
+        char * const GetBody() const;
 
         /*! @fn std::string GetHTTPVersion() const
-         * @example "HTTP/1.1"
+         * @example HTTPVersion "HTTP/1.1"
          * @return HTTP Version
          */
         std::string GetHTTPVersion() const;
 
-        /*! @fn void setHTTPVersion(unsigned char major, unsigned char minor)
+        /*! @fn void SetHTTPVersion(unsigned char major, unsigned char minor)
          * @brief set version of HTTP
          * @param major
          * @param minor
          */
-        void setHTTPVersion(unsigned char major, unsigned char minor);
+        void SetHTTPVersion(unsigned char major, unsigned char minor);
+
+        /*! @fn void SetBody(std::string const &body);
+        * @brief set body
+        * @param body
+        */
+        void SetBody(std::string const &body);
+
+
+        /*! @fn void SetBody(char *body, unsigned int size);
+         * @brief set body
+         * @param body
+         * @param size
+         */
+        void SetBody(const char *body, unsigned long size);
 
         /*! @fn CommunicationSession *GetSocket() const
          *

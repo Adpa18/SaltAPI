@@ -19,14 +19,14 @@ namespace Module {
      */
     class INetwork {
     public:
-        /*! @fn bool Raise(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)
+        /*! @fn bool Start(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)
          *
          * @param req the default request from the core
          * @param res the default response from the core
          * @param pl the default processsingList from the core
          * @return
          */
-        virtual bool Raise(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl) = 0;
+        virtual bool Start(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl) = 0;
 
         /*! @fn bool OnRequest()
          * @brief this function is called when a request is received

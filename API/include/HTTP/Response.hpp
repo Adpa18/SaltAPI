@@ -44,11 +44,23 @@ namespace HTTP {
          */
         Request *GetRequest() const;
 
-        /*! @fn void setRequest(Request *request)
+        /*! @fn void SetStatusMsg(std::string const &msg)
+         * @brief set message
+         * @param msg
+         */
+        void SetStatusMsg(std::string const &msg);
+
+        /*! @fn void SetStatusCode(unsigned int code)
+         * @brief set code
+         * @param code
+         */
+        void SetStatusCode(unsigned int code);
+
+        /*! @fn void SetRequest(Request *request)
          * @brief set Request
          * @param request
          */
-        void setRequest(Request *request);
+        void SetRequest(Request *request);
     };
 }
 
