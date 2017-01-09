@@ -24,11 +24,12 @@ namespace Module {
          */
         enum Type {
             Core,
-            Logging,
+            Logger,
             ConfigLoader,
             Network,
             FileServe,
-            ModuleHandler
+            HTTP,
+            Default
         };
 
     public:

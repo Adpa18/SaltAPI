@@ -12,6 +12,8 @@ namespace HTTP {
 
     class Response;
 
+    class ProcessingList;
+
     /*! @typedef EventFunction
      * type of an event function
      */
@@ -52,33 +54,43 @@ namespace HTTP {
          */
         bool push(EventFunction *eventFunction);
 
-        /*! @fn bool pushBefore(EventFunction *eventFunction)
-         * @brief push before eventFunction pointer
+        /*! @fn bool pushBefore(EventFunction *eventFunction, EventFunction *ref)
+         * @brief push eventFunction before ref pointer
          * @param eventFunction
+         * @param ref
          * @return
          */
-        bool pushBefore(EventFunction *eventFunction);
+        bool pushBefore(EventFunction *eventFunction, EventFunction *ref);
 
-        /*! @fn bool pushBefore(std::list<EventFunction *>::const_iterator it)
-         * @brief push before iterator
-         * @param it
+        /*! @fn bool pushBefore(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref)
+         * @brief push eventFunction before iterator
+         * @param eventFunction
+         * @param ref
          * @return
          */
-        bool pushBefore(std::list<EventFunction *>::const_iterator it);
+        bool pushBefore(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref);
 
-        /*! @fn bool pushAfter(EventFunction *eventFunction)
-        * @brief push after eventFunction pointer
+        /*! @fn bool pushAfter(EventFunction *eventFunction, EventFunction *ref)
+        * @brief push eventFunction after ref pointer
         * @param eventFunction
+        * @param ref
         * @return
         */
-        bool pushAfter(EventFunction *eventFunction);
+        bool pushAfter(EventFunction *eventFunction, EventFunction *ref);
 
-        /*! @fn bool pushAfter(std::list<EventFunction *>::const_iterator it)
-        * @brief push after iterator
-        * @param it
+        /*! @fn bool pushAfter(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref)
+        * @brief push eventFunction after iterator
+        * @param eventFunction
+        * @param ref
         * @return
         */
-        bool pushAfter(std::list<EventFunction *>::const_iterator it);
+        bool pushAfter(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref);
+
+        /*! @fn bool next() const
+         * @brief pop current event and call next event
+         * @return
+         */
+        bool next(Request *req, Response *res);
     };
 }
 

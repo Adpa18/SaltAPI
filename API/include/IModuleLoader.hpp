@@ -54,14 +54,6 @@ public:
      */
     virtual Module::IModule *Get(Module::IModule::Type) const = 0;
 
-    /*! @fn template<class T>T *Get() const;
-     *
-     * @tparam T
-     * @return module got by T
-     */
-    template<class T>
-    virtual T *Get() const = 0;
-
 };
 
 #endif //API_V2_IMODULELOADER_HPP

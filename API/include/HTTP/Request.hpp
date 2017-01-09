@@ -45,23 +45,23 @@ namespace HTTP {
         Response *GetResponse() const;
 
     public:
-        /*! @fn void setMethod(std::string const &method)
+        /*! @fn void SetMethod(std::string const &method)
          * @brief set Method
          * @param method
          */
-        void setMethod(std::string const &method);
+        void SetMethod(std::string const &method);
 
-        /*! @fn void setURL(std::string const &url)
+        /*! @fn void SetURL(std::string const &url)
          * @brief set URL
          * @param url
          */
-        void setURL(std::string const &url);
+        void SetURL(std::string const &url);
 
-        /*! @fn void setResponse(Response *response)
+        /*! @fn void SetResponse(Response *response)
          * @brief set Response
          * @param response
          */
-        void setResponse(Response *response);
+        void SetResponse(Response *response);
     };
 }
 

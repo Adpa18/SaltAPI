@@ -12,7 +12,7 @@ namespace Module {
 
     class AModule : public IModule {
     public:
-        AModule(ICore &core);
+        AModule(ICore &core, Type type, std::string const &name);
 
         virtual ~AModule();
 

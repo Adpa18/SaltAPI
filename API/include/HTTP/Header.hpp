@@ -10,6 +10,9 @@
 
 namespace HTTP {
     class Header {
+    public:
+        Header();
+        virtual ~Header();
     private:
         std::map<std::string, std::string> m_headers;
 

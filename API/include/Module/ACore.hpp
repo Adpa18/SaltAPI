@@ -12,7 +12,7 @@
 namespace Module {
     class IConfigLoader;
 
-    class ILogging;
+    class ILogger;
 
     class INetwork;
 
@@ -20,14 +20,14 @@ namespace Module {
 
     class ACore : public ICore, public AModule {
     public:
-        ACore(ICore &core);
+        ACore(ICore &core, std::string const &name);
 
         virtual ~ACore();
 
     protected:
         IModuleLoader *m_moduleLoader = nullptr;
         IConfigLoader *m_configLoader = nullptr;
-        ILogging *m_logging = nullptr;
+        ILogger *m_logger = nullptr;
         INetwork *m_network = nullptr;
         IFileServe *m_fileServe = nullptr;
 
@@ -43,12 +43,7 @@ namespace Module {
     public:
         IModule *Get(std::string const &name) const override;
 
-        IModule *Get(IModule::Type) const override;
-
-        template<class T>
-        T *Get() const override {
-            return m_moduleLoader->Get<T>();
-        }
+        IModule *Get(IModule::Type type) const override;
 
     public:
         virtual IModule *GetModule(ICore &core) const override;
