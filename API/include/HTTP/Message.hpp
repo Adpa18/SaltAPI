@@ -67,7 +67,7 @@ namespace HTTP {
         void SetBody(std::string const &body);
 
 
-        /*! @fn void SetBody(char *body, unsigned int size);
+        /*! @fn void SetBody(const char *body, unsigned int size);
          * @brief set body
          * @param body
          * @param size

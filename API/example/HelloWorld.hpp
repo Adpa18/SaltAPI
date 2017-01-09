@@ -7,17 +7,23 @@
 
 #include "Module/IHTTPHandle.hpp"
 #include "Module/AModule.hpp"
+#include "DllExport.hpp"
 
-class HelloWorld: public Module::IHTTPHandle, public Module::AModule {
-public:
-    HelloWorld(Module::ICore &core);
-    virtual ~HelloWorld();
+extern "C"
+{
+    class EXPORT HelloWorld : public Module::IHTTPHandle, public Module::AModule
+    {
+    public:
+        HelloWorld(Module::ICore &core);
 
-public:
-    bool Handle(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl);
+        virtual ~HelloWorld();
 
-public:
-    Module::IModule *GetModule(Module::ICore &core) const override;
-};
+    public:
+        bool Handle(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl);
+
+    public:
+        Module::IModule *GetModule(Module::ICore &core) const override;
+    };
+}
 
 #endif //API_V2_HELLOWORLD_HPP

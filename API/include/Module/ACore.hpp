@@ -27,7 +27,7 @@ namespace Module {
     protected:
         IModuleLoader *m_moduleLoader = nullptr;
         IConfigLoader *m_configLoader = nullptr;
-        ILogger *m_logging = nullptr;
+        ILogger *m_logger = nullptr;
         INetwork *m_network = nullptr;
         IFileServe *m_fileServe = nullptr;
 
