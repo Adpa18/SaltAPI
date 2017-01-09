@@ -1,6 +1,6 @@
 # SaltAPI
 
-![SaltAPI](https://saltapi.github.io/img/Logo512.png)
+![SaltAPI](https://saltapi.github.io/img/Logo256.png)
 
 Une **bonne** API pour le projet HTTPd / Zia {EPITECH} promo 2019
 
