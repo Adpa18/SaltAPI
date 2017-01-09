@@ -1,0 +1,11 @@
+<map id="Module::ACore" name="Module::ACore">
+<area shape="rect" id="node2" href="$class_module_1_1_i_core.html" title="Module::ICore" alt="" coords="13,13,117,40"/>
+<area shape="rect" id="node3" href="$class_module_1_1_a_module.html" title="Module::AModule" alt="" coords="237,49,360,76"/>
+<area shape="rect" id="node4" href="$class_module_1_1_i_module.html" title="Module::IModule" alt="" coords="6,77,125,104"/>
+<area shape="rect" id="node5" href="$class_module_1_1_i_config_loader.html" title="Module::IConfigLoader" alt="" coords="222,100,375,127"/>
+<area shape="rect" id="node6" href="$class_module_1_1_i_network.html" title="Module::INetwork" alt="" coords="236,151,361,177"/>
+<area shape="rect" id="node7" href="$class_i_module_loader.html" title="IModuleLoader" alt="" coords="245,201,352,228"/>
+<area shape="rect" id="node8" href="$class_i_config.html" title="This class is for the config It&#39;s use to store a pointer of the config in the Core You have to dynami..." alt="" coords="267,252,331,279"/>
+<area shape="rect" id="node9" href="$class_module_1_1_i_logging.html" title="Module::ILogging" alt="" coords="238,303,359,329"/>
+<area shape="rect" id="node10" href="$class_module_1_1_i_file_serve.html" title="Module::IFileServe" alt="" coords="233,353,364,380"/>
+</map>
