@@ -87,6 +87,7 @@ Voici la liste des modules qui sont en mesure d'intéragir avec les requêtes HT
 * Network (pour l'envoi de la réponse)
 
 Les méthodes de ces modules reçoivent la requête, la réponse et la *processing list*.
+Ces modules héritent tous de l'interface `AModule` et de `IHTTPHandle`.
 
 ### Hummmm... La *processing list* ?
 
@@ -95,3 +96,25 @@ Quand une requête HTTP est reçue par le serveur web, une *processing list* gé
 Cette *processing list* générique contient par défaut les actions précisées dans le fichier de configuration.
 Les modules de type HTTP (HTTP header inspector, HTTP representation generator, ...) sont dès lors en mesure d'interagir avec cette liste.
 Chaque {requête + réponse} possède sa propre *processing list*.
+
+### Comment charger un nouveau module ?
+
+Les modules peuvent charger d'autres modules via un appel au module Core.
+
+En voici un exemple:
+
+```cpp
+m_core.Get("moduleName");
+```
+
+### Intéragir avec la *processing list* !
+
+Chaque module HTTP peut accéder et modifier la *processing list* qui traite la requête HTTP courrante.
+Imaginons que lors du traitement d'une requête HTTP, le module `HTTP Request Header Inspector Module` détecte (en lisant les headers) que l'entity (le corps) est compréssée (`Content-Encoding: gzip`).
+Ce module peut donc ajouter un appel au module de décompression après lui dans la *processing list* afin de décompresser l'entity (le corps).
+
+Comme ceci:
+
+```cpp
+pl->pushAfter(std::bind(&IHTTPHandle::Handle, dynamic_cast<IHTTPHandle>(m_core.Get("DecompressionModule"))), pl->top());
+```
