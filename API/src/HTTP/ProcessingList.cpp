@@ -18,49 +18,32 @@ namespace HTTP {
         m_events.pop_front();
     }
 
-    EventFunction *ProcessingList::top() {
-        return m_events.front();
+    EventFunctionList::iterator ProcessingList::begin() {
+        return m_events.begin();
     }
 
-    EventFunction *ProcessingList::bottom() {
-        return m_events.back();
+    EventFunctionList::iterator ProcessingList::end() {
+        return m_events.end();
     }
 
-    bool ProcessingList::push(EventFunction *eventFunction) {
+    bool ProcessingList::push(EventFunction eventFunction) {
         m_events.push_back(eventFunction);
         return true;
     }
 
-    bool ProcessingList::pushBefore(EventFunction *eventFunction, EventFunction *ref) {
-        std::list<EventFunction *>::const_iterator pos = std::find(m_events.begin(), m_events.end(), ref);
-        if (pos == m_events.end()) {
-            return false;
-        }
-        pushBefore(eventFunction, pos);
-        return true;
-    }
-
-    bool ProcessingList::pushBefore(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref) {
+    bool ProcessingList::pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref) {
         m_events.insert(ref, eventFunction);
         return true;
     }
 
-    bool ProcessingList::pushAfter(EventFunction *eventFunction, EventFunction *ref) {
-        std::list<EventFunction *>::const_iterator pos = std::find(m_events.begin(), m_events.end(), ref);
-        if (pos == m_events.end()) {
-            return false;
-        }
-        pushAfter(eventFunction, pos);
-        return true;
-    }
 
-    bool ProcessingList::pushAfter(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref) {
+    bool ProcessingList::pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref) {
         m_events.insert(++ref, eventFunction);
         return true;
     }
 
     bool ProcessingList::next(Request *req, Response *res) {
         pop();
-        (*top())(req, res, this);
+        (*begin())(req, res, this);
     }
 }

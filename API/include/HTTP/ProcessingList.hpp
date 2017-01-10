@@ -6,6 +6,7 @@
 #define API_V2_PROCESSINGLIST_HPP
 
 #include <list>
+#include <functional>
 
 namespace HTTP {
     class Request;
@@ -17,7 +18,10 @@ namespace HTTP {
     /*! @typedef EventFunction
      * type of an event function
      */
-    typedef bool (*EventFunction)(Request *req, Response *res, ProcessingList *pl);
+//    typedef bool (EventFunction)(Request *req, Response *res, ProcessingList *pl);
+    typedef std::function<bool(Request *req, Response *res, ProcessingList *pl)> EventFunction;
+
+    typedef std::list<EventFunction>    EventFunctionList;
 
     class ProcessingList {
     public:
@@ -26,7 +30,7 @@ namespace HTTP {
         virtual ~ProcessingList();
 
     private:
-        std::list<EventFunction *> m_events;
+        EventFunctionList m_events;
 
     public:
         /*! @fn bool pop();
@@ -35,56 +39,41 @@ namespace HTTP {
          */
         bool pop();
 
-        /*! @fn EventFunction *top()
+        /*! @fn EventFunction begin()
          *
-         * @return first elem
+         * @return first iterator
          */
-        EventFunction *top();
+        EventFunctionList::iterator begin();
 
         /*! EventFunction *bottom()
          *
-         * @returnlast elem
+         * @return last iterator
          */
-        EventFunction *bottom();
+        EventFunctionList::iterator end();
 
-        /*! @fn bool push(EventFunction *eventFunction)
+        /*! @fn bool push(EventFunction eventFunction)
          * @brief push back eventFunction
          * @param eventFunction
          * @return
          */
-        bool push(EventFunction *eventFunction);
+        bool push(EventFunction eventFunction);
 
-        /*! @fn bool pushBefore(EventFunction *eventFunction, EventFunction *ref)
-         * @brief push eventFunction before ref pointer
-         * @param eventFunction
-         * @param ref
-         * @return
-         */
-        bool pushBefore(EventFunction *eventFunction, EventFunction *ref);
 
-        /*! @fn bool pushBefore(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref)
+        /*! @fn bool pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref)
          * @brief push eventFunction before iterator
          * @param eventFunction
          * @param ref
          * @return
          */
-        bool pushBefore(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref);
+        bool pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref);
 
-        /*! @fn bool pushAfter(EventFunction *eventFunction, EventFunction *ref)
-        * @brief push eventFunction after ref pointer
-        * @param eventFunction
-        * @param ref
-        * @return
-        */
-        bool pushAfter(EventFunction *eventFunction, EventFunction *ref);
-
-        /*! @fn bool pushAfter(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref)
+        /*! @fn bool pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref)
         * @brief push eventFunction after iterator
         * @param eventFunction
         * @param ref
         * @return
         */
-        bool pushAfter(EventFunction *eventFunction, std::list<EventFunction *>::const_iterator ref);
+        bool pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref);
 
         /*! @fn bool next() const
          * @brief pop current event and call next event
