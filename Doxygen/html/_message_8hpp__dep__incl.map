@@ -1,4 +1,10 @@
 <map id="/home/veyrie_f/Documents/SaltAPI/API/include/HTTP/Message.hpp" name="/home/veyrie_f/Documents/SaltAPI/API/include/HTTP/Message.hpp">
-<area shape="rect" id="node2" href="$_request_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/include/HTTP\l/Request.hpp" alt="" coords="5,109,187,165"/>
-<area shape="rect" id="node3" href="$_response_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/include/HTTP\l/Response.hpp" alt="" coords="211,109,392,165"/>
+<area shape="rect" id="node2" href="$_request_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/include/HTTP\l/Request.hpp" alt="" coords="667,109,848,165"/>
+<area shape="rect" id="node7" href="$_response_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/include/HTTP\l/Response.hpp" alt="" coords="461,109,643,165"/>
+<area shape="rect" id="node9" href="$_message_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/src/HTTP/Message.cpp" alt="" coords="872,117,1112,158"/>
+<area shape="rect" id="node3" href="$_add_event_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/AddEvent.cpp" alt="" coords="275,214,511,255"/>
+<area shape="rect" id="node4" href="$_compress_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/Compress.cpp" alt="" coords="535,214,773,255"/>
+<area shape="rect" id="node5" href="$_hello_world_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/HelloWorld.cpp" alt="" coords="799,214,1041,255"/>
+<area shape="rect" id="node6" href="$_request_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/src/HTTP/Request.cpp" alt="" coords="1066,214,1301,255"/>
+<area shape="rect" id="node8" href="$_response_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/src/HTTP/Response.cpp" alt="" coords="5,214,251,255"/>
 </map>

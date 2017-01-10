@@ -1,6 +1,7 @@
 var examples =
 [
-    [ "dynamic_cast", "dynamic_cast-example.html", null ],
-    [ "HTTP/1.1", "_h_t_t_p_21_81-example.html", null ],
-    [ "The", "_the-example.html", null ]
+    [ "HTTPVersion", "_h_t_t_p_version-example.html", null ],
+    [ "IConfigClass", "_i_config_class-example.html", null ],
+    [ "Module", "_module-example.html", null ],
+    [ "usage", "usage-example.html", null ]
 ];

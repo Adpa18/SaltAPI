@@ -1,4 +1,7 @@
 <map id="Module::IModule" name="Module::IModule">
-<area shape="rect" id="node2" href="$class_module_1_1_a_module.html" title="Module::AModule" alt="" coords="5,80,128,107"/>
-<area shape="rect" id="node3" href="$class_module_1_1_a_core.html" title="Module::ACore" alt="" coords="12,155,121,181"/>
+<area shape="rect" id="node2" href="$class_module_1_1_a_module.html" title="Module::AModule" alt="" coords="143,80,265,107"/>
+<area shape="rect" id="node3" href="$class_add_event.html" title="AddEvent" alt="" coords="5,155,83,181"/>
+<area shape="rect" id="node4" href="$class_compress.html" title="Compress" alt="" coords="108,155,189,181"/>
+<area shape="rect" id="node5" href="$class_hello_world.html" title="HelloWorld" alt="" coords="215,155,301,181"/>
+<area shape="rect" id="node6" href="$class_module_1_1_a_core.html" title="Module::ACore" alt="" coords="327,155,436,181"/>
 </map>

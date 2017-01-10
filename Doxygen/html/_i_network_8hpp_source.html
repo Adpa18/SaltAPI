@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo64.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SaltAPI
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">An API for the HTTPd / Zia by Salty Studio.</div>
   </td>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -93,7 +95,7 @@ $(document).ready(function(){initNavTree('_i_network_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -125,7 +127,7 @@ $(document).ready(function(){initNavTree('_i_network_8hpp_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>Module {</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_module_1_1_i_network.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_module_1_1_i_network.html">INetwork</a> {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_module_1_1_i_network.html#aca823816f18c2a82dc04bad5f01ec6f3">Raise</a>(<a class="code" href="class_h_t_t_p_1_1_request.html">HTTP::Request</a> *req, <a class="code" href="class_h_t_t_p_1_1_response.html">HTTP::Response</a> *res, <a class="code" href="class_h_t_t_p_1_1_processing_list.html">HTTP::ProcessingList</a> *pl) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_module_1_1_i_network.html#a9766f004c95840d5c1160e9528e2aa3c">Start</a>(<a class="code" href="class_h_t_t_p_1_1_request.html">HTTP::Request</a> *req, <a class="code" href="class_h_t_t_p_1_1_response.html">HTTP::Response</a> *res, <a class="code" href="class_h_t_t_p_1_1_processing_list.html">HTTP::ProcessingList</a> *pl) = 0;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_module_1_1_i_network.html#a238073fca5f96c5981040a6a746c5c80">OnRequest</a>() = 0;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
@@ -134,9 +136,9 @@ $(document).ready(function(){initNavTree('_i_network_8hpp_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif //API_V2_INETWORK_HPP</span></div>
-<div class="ttc" id="class_module_1_1_i_network_html_aca823816f18c2a82dc04bad5f01ec6f3"><div class="ttname"><a href="class_module_1_1_i_network.html#aca823816f18c2a82dc04bad5f01ec6f3">Module::INetwork::Raise</a></div><div class="ttdeci">virtual bool Raise(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)=0</div></div>
 <div class="ttc" id="class_h_t_t_p_1_1_response_html"><div class="ttname"><a href="class_h_t_t_p_1_1_response.html">HTTP::Response</a></div><div class="ttdef"><b>Definition:</b> <a href="_response_8hpp_source.html#l00016">Response.hpp:16</a></div></div>
-<div class="ttc" id="class_h_t_t_p_1_1_processing_list_html"><div class="ttname"><a href="class_h_t_t_p_1_1_processing_list.html">HTTP::ProcessingList</a></div><div class="ttdef"><b>Definition:</b> <a href="_processing_list_8hpp_source.html#l00020">ProcessingList.hpp:20</a></div></div>
+<div class="ttc" id="class_module_1_1_i_network_html_a9766f004c95840d5c1160e9528e2aa3c"><div class="ttname"><a href="class_module_1_1_i_network.html#a9766f004c95840d5c1160e9528e2aa3c">Module::INetwork::Start</a></div><div class="ttdeci">virtual bool Start(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)=0</div></div>
+<div class="ttc" id="class_h_t_t_p_1_1_processing_list_html"><div class="ttname"><a href="class_h_t_t_p_1_1_processing_list.html">HTTP::ProcessingList</a></div><div class="ttdef"><b>Definition:</b> <a href="_processing_list_8hpp_source.html#l00026">ProcessingList.hpp:26</a></div></div>
 <div class="ttc" id="class_module_1_1_i_network_html_a238073fca5f96c5981040a6a746c5c80"><div class="ttname"><a href="class_module_1_1_i_network.html#a238073fca5f96c5981040a6a746c5c80">Module::INetwork::OnRequest</a></div><div class="ttdeci">virtual bool OnRequest()=0</div><div class="ttdoc">this function is called when a request is received </div></div>
 <div class="ttc" id="class_module_1_1_i_network_html"><div class="ttname"><a href="class_module_1_1_i_network.html">Module::INetwork</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_network_8hpp_source.html#l00020">INetwork.hpp:20</a></div></div>
 <div class="ttc" id="class_module_1_1_i_network_html_ac5a4123ff2fda9179791f6725d007433"><div class="ttname"><a href="class_module_1_1_i_network.html#ac5a4123ff2fda9179791f6725d007433">Module::INetwork::Send</a></div><div class="ttdeci">virtual bool Send(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)=0</div></div>
@@ -147,7 +149,7 @@ $(document).ready(function(){initNavTree('_i_network_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html">API</a></li><li class="navelem"><a class="el" href="dir_bd61ee1abb7e4508c7906a1172c00adb.html">include</a></li><li class="navelem"><a class="el" href="dir_62c6fcae5a810a51dd4644dbb68f62cb.html">Module</a></li><li class="navelem"><a class="el" href="_i_network_8hpp.html">INetwork.hpp</a></li>
-    <li class="footer">Generated on Sun Jan 8 2017 18:38:57 for SaltAPI by
+    <li class="footer">Generated on Tue Jan 10 2017 17:44:53 for SaltAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

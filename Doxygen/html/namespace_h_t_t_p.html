@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo64.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SaltAPI
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">An API for the HTTPd / Zia by Salty Studio.</div>
   </td>
@@ -94,7 +95,7 @@ $(document).ready(function(){initNavTree('namespace_h_t_t_p.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -127,24 +128,42 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4f75251d56a9c970f852777dbc08df4f"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_h_t_t_p.html#a4f75251d56a9c970f852777dbc08df4f">EventFunction</a> )(<a class="el" href="class_h_t_t_p_1_1_request.html">Request</a> *req, <a class="el" href="class_h_t_t_p_1_1_response.html">Response</a> *res, <a class="el" href="class_h_t_t_p_1_1_processing_list.html">ProcessingList</a> *pl)</td></tr>
-<tr class="separator:a4f75251d56a9c970f852777dbc08df4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2367c828e72dc58a6b25f872dda76a4b"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; bool(<a class="el" href="class_h_t_t_p_1_1_request.html">Request</a> <br class="typebreak"/>
+*req, <a class="el" href="class_h_t_t_p_1_1_response.html">Response</a> *res, <br class="typebreak"/>
+<a class="el" href="class_h_t_t_p_1_1_processing_list.html">ProcessingList</a> *pl)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_h_t_t_p.html#a2367c828e72dc58a6b25f872dda76a4b">EventFunction</a></td></tr>
+<tr class="separator:a2367c828e72dc58a6b25f872dda76a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fb2f2464a1eb0915f792cb05f83b28"><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="namespace_h_t_t_p.html#a2367c828e72dc58a6b25f872dda76a4b">EventFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_h_t_t_p.html#a55fb2f2464a1eb0915f792cb05f83b28">EventFunctionList</a></td></tr>
+<tr class="separator:a55fb2f2464a1eb0915f792cb05f83b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Namespace for <a class="el" href="namespace_h_t_t_p.html">HTTP</a> Communication </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a4f75251d56a9c970f852777dbc08df4f"></a>
+<a class="anchor" id="a2367c828e72dc58a6b25f872dda76a4b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HTTP::EventFunction</td>
+          <td class="memname"><a class="el" href="namespace_h_t_t_p.html#a2367c828e72dc58a6b25f872dda76a4b">HTTP::EventFunction</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>type of an event function </p>
 
-<p>Definition at line <a class="el" href="_processing_list_8hpp_source.html#l00018">18</a> of file <a class="el" href="_processing_list_8hpp_source.html">ProcessingList.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_processing_list_8hpp_source.html#l00022">22</a> of file <a class="el" href="_processing_list_8hpp_source.html">ProcessingList.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55fb2f2464a1eb0915f792cb05f83b28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;<a class="el" href="namespace_h_t_t_p.html#a2367c828e72dc58a6b25f872dda76a4b">EventFunction</a>&gt; <a class="el" href="namespace_h_t_t_p.html#a55fb2f2464a1eb0915f792cb05f83b28">HTTP::EventFunctionList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_processing_list_8hpp_source.html#l00024">24</a> of file <a class="el" href="_processing_list_8hpp_source.html">ProcessingList.hpp</a>.</p>
 
 </div>
 </div>
@@ -154,7 +173,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_h_t_t_p.html">HTTP</a></li>
-    <li class="footer">Generated on Sun Jan 8 2017 18:38:57 for SaltAPI by
+    <li class="footer">Generated on Tue Jan 10 2017 17:44:53 for SaltAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

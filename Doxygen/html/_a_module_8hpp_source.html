@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo64.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SaltAPI
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">An API for the HTTPd / Zia by Salty Studio.</div>
   </td>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -93,7 +95,7 @@ $(document).ready(function(){initNavTree('_a_module_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,9 +123,9 @@ $(document).ready(function(){initNavTree('_a_module_8hpp_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_module_1_1_a_module.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_module_1_1_a_module.html">AModule</a> : <span class="keyword">public</span> <a class="code" href="class_module_1_1_i_module.html">IModule</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_module_1_1_a_module.html#ae1224140bd83f8b735a63187235087fa">AModule</a>(<a class="code" href="class_module_1_1_i_core.html">ICore</a> &amp;core);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_module_1_1_a_module.html#af171baf73728567dfab54e511a8372f7">AModule</a>(<a class="code" href="class_module_1_1_i_core.html">ICore</a> &amp;core, <a class="code" href="class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dc">Type</a> type, std::string <span class="keyword">const</span> &amp;name);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_module_1_1_a_module.html#aed7bf07dded5236101dc29c267e18f7e">~AModule</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_module_1_1_a_module.html#ad7dac3810fde2dd8cc4e476ca3b6ccf6">~AModule</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_module_1_1_a_module.html#abcf569a155a21d3513e0aea7b61bb9d1">   20</a></span>&#160;        <a class="code" href="class_module_1_1_i_core.html">ICore</a> &amp;<a class="code" href="class_module_1_1_a_module.html#abcf569a155a21d3513e0aea7b61bb9d1">m_core</a>;</div>
@@ -131,9 +133,9 @@ $(document).ready(function(){initNavTree('_a_module_8hpp_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_module_1_1_a_module.html#a1b66dad3006b265f2442e96af7e9ee4e">   22</a></span>&#160;        <a class="code" href="class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dc">Type</a> <a class="code" href="class_module_1_1_a_module.html#a1b66dad3006b265f2442e96af7e9ee4e">m_type</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::string <span class="keyword">const</span> &amp;<a class="code" href="class_module_1_1_a_module.html#ad2d6658a1c8332877cd6120aaf42442d">GetName</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::string <span class="keyword">const</span> &amp;<a class="code" href="class_module_1_1_a_module.html#ae4619e8b15464e3c6842932da8aab941">GetName</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dc">Type</a> <a class="code" href="class_module_1_1_a_module.html#a057eef58f8e9248aefe25b0c0d3b478c">GetType</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dc">Type</a> <a class="code" href="class_module_1_1_a_module.html#a86c9bda8c80e2a78e19bd5a8cef263d8">GetType</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_module_1_1_a_module.html#a6f227b8cba4773d99e6d52fb33476a43">Load</a>() <span class="keyword">override</span>;</div>
@@ -141,24 +143,24 @@ $(document).ready(function(){initNavTree('_a_module_8hpp_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_module_1_1_a_module.html#a1bdac5be290d6941e8dd15de6e8e9b07">Unload</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_module_1_1_i_module.html">IModule</a> *<a class="code" href="class_module_1_1_a_module.html#af9cc883fcd500ff1d1340cf70fcd023d">GetModule</a>(<a class="code" href="class_module_1_1_i_core.html">ICore</a> &amp;core) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_module_1_1_i_module.html">IModule</a> *<a class="code" href="class_module_1_1_a_module.html#a5208f90d19be356e1e82241e3e5ca41e">GetModule</a>(<a class="code" href="class_module_1_1_i_core.html">ICore</a> &amp;core) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif //API_V2_AMODULE_HPP</span></div>
-<div class="ttc" id="class_module_1_1_a_module_html_aed7bf07dded5236101dc29c267e18f7e"><div class="ttname"><a href="class_module_1_1_a_module.html#aed7bf07dded5236101dc29c267e18f7e">Module::AModule::~AModule</a></div><div class="ttdeci">virtual ~AModule()</div></div>
+<div class="ttc" id="class_module_1_1_a_module_html_ae4619e8b15464e3c6842932da8aab941"><div class="ttname"><a href="class_module_1_1_a_module.html#ae4619e8b15464e3c6842932da8aab941">Module::AModule::GetName</a></div><div class="ttdeci">std::string const &amp; GetName() const override</div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8cpp_source.html#l00017">AModule.cpp:17</a></div></div>
 <div class="ttc" id="class_module_1_1_a_module_html_a1b66dad3006b265f2442e96af7e9ee4e"><div class="ttname"><a href="class_module_1_1_a_module.html#a1b66dad3006b265f2442e96af7e9ee4e">Module::AModule::m_type</a></div><div class="ttdeci">Type m_type</div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8hpp_source.html#l00022">AModule.hpp:22</a></div></div>
-<div class="ttc" id="class_module_1_1_a_module_html_ae1224140bd83f8b735a63187235087fa"><div class="ttname"><a href="class_module_1_1_a_module.html#ae1224140bd83f8b735a63187235087fa">Module::AModule::AModule</a></div><div class="ttdeci">AModule(ICore &amp;core)</div></div>
 <div class="ttc" id="class_module_1_1_a_module_html_abcf569a155a21d3513e0aea7b61bb9d1"><div class="ttname"><a href="class_module_1_1_a_module.html#abcf569a155a21d3513e0aea7b61bb9d1">Module::AModule::m_core</a></div><div class="ttdeci">ICore &amp; m_core</div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8hpp_source.html#l00020">AModule.hpp:20</a></div></div>
 <div class="ttc" id="class_module_1_1_i_module_html"><div class="ttname"><a href="class_module_1_1_i_module.html">Module::IModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_module_8hpp_source.html#l00020">IModule.hpp:20</a></div></div>
-<div class="ttc" id="class_module_1_1_a_module_html_a6f227b8cba4773d99e6d52fb33476a43"><div class="ttname"><a href="class_module_1_1_a_module.html#a6f227b8cba4773d99e6d52fb33476a43">Module::AModule::Load</a></div><div class="ttdeci">bool Load() override</div><div class="ttdoc">Method for futur use. </div></div>
-<div class="ttc" id="class_module_1_1_a_module_html_af9cc883fcd500ff1d1340cf70fcd023d"><div class="ttname"><a href="class_module_1_1_a_module.html#af9cc883fcd500ff1d1340cf70fcd023d">Module::AModule::GetModule</a></div><div class="ttdeci">virtual IModule * GetModule(ICore &amp;core) const override</div><div class="ttdoc">The function return an instance of the module. </div></div>
-<div class="ttc" id="class_module_1_1_a_module_html_a057eef58f8e9248aefe25b0c0d3b478c"><div class="ttname"><a href="class_module_1_1_a_module.html#a057eef58f8e9248aefe25b0c0d3b478c">Module::AModule::GetType</a></div><div class="ttdeci">Type GetType() const override</div></div>
+<div class="ttc" id="class_module_1_1_a_module_html_a6f227b8cba4773d99e6d52fb33476a43"><div class="ttname"><a href="class_module_1_1_a_module.html#a6f227b8cba4773d99e6d52fb33476a43">Module::AModule::Load</a></div><div class="ttdeci">bool Load() override</div><div class="ttdoc">Method for futur use. </div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8cpp_source.html#l00025">AModule.cpp:25</a></div></div>
+<div class="ttc" id="class_module_1_1_a_module_html_af171baf73728567dfab54e511a8372f7"><div class="ttname"><a href="class_module_1_1_a_module.html#af171baf73728567dfab54e511a8372f7">Module::AModule::AModule</a></div><div class="ttdeci">AModule(ICore &amp;core, Type type, std::string const &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8cpp_source.html#l00008">AModule.cpp:8</a></div></div>
 <div class="ttc" id="_i_module_8hpp_html"><div class="ttname"><a href="_i_module_8hpp.html">IModule.hpp</a></div></div>
+<div class="ttc" id="class_module_1_1_a_module_html_a5208f90d19be356e1e82241e3e5ca41e"><div class="ttname"><a href="class_module_1_1_a_module.html#a5208f90d19be356e1e82241e3e5ca41e">Module::AModule::GetModule</a></div><div class="ttdeci">virtual IModule * GetModule(ICore &amp;core) const override</div><div class="ttdoc">The function return an instance of the module. </div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8cpp_source.html#l00033">AModule.cpp:33</a></div></div>
 <div class="ttc" id="class_module_1_1_a_module_html_aab5ad1037453a5e4d9ddefb344e24354"><div class="ttname"><a href="class_module_1_1_a_module.html#aab5ad1037453a5e4d9ddefb344e24354">Module::AModule::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8hpp_source.html#l00021">AModule.hpp:21</a></div></div>
-<div class="ttc" id="class_module_1_1_a_module_html_ad2d6658a1c8332877cd6120aaf42442d"><div class="ttname"><a href="class_module_1_1_a_module.html#ad2d6658a1c8332877cd6120aaf42442d">Module::AModule::GetName</a></div><div class="ttdeci">std::string const &amp; GetName() const override</div></div>
+<div class="ttc" id="class_module_1_1_a_module_html_ad7dac3810fde2dd8cc4e476ca3b6ccf6"><div class="ttname"><a href="class_module_1_1_a_module.html#ad7dac3810fde2dd8cc4e476ca3b6ccf6">Module::AModule::~AModule</a></div><div class="ttdeci">virtual ~AModule()</div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8cpp_source.html#l00013">AModule.cpp:13</a></div></div>
 <div class="ttc" id="class_module_1_1_a_module_html"><div class="ttname"><a href="class_module_1_1_a_module.html">Module::AModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8hpp_source.html#l00013">AModule.hpp:13</a></div></div>
-<div class="ttc" id="class_module_1_1_a_module_html_a1bdac5be290d6941e8dd15de6e8e9b07"><div class="ttname"><a href="class_module_1_1_a_module.html#a1bdac5be290d6941e8dd15de6e8e9b07">Module::AModule::Unload</a></div><div class="ttdeci">bool Unload() override</div><div class="ttdoc">Method for futur use. </div></div>
+<div class="ttc" id="class_module_1_1_a_module_html_a1bdac5be290d6941e8dd15de6e8e9b07"><div class="ttname"><a href="class_module_1_1_a_module.html#a1bdac5be290d6941e8dd15de6e8e9b07">Module::AModule::Unload</a></div><div class="ttdeci">bool Unload() override</div><div class="ttdoc">Method for futur use. </div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8cpp_source.html#l00029">AModule.cpp:29</a></div></div>
+<div class="ttc" id="class_module_1_1_a_module_html_a86c9bda8c80e2a78e19bd5a8cef263d8"><div class="ttname"><a href="class_module_1_1_a_module.html#a86c9bda8c80e2a78e19bd5a8cef263d8">Module::AModule::GetType</a></div><div class="ttdeci">Type GetType() const override</div><div class="ttdef"><b>Definition:</b> <a href="_a_module_8cpp_source.html#l00021">AModule.cpp:21</a></div></div>
 <div class="ttc" id="class_module_1_1_i_module_html_acde96227fba125dc2c7f85e7675a05dc"><div class="ttname"><a href="class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dc">Module::IModule::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_i_module_8hpp_source.html#l00025">IModule.hpp:25</a></div></div>
 <div class="ttc" id="class_module_1_1_i_core_html"><div class="ttname"><a href="class_module_1_1_i_core.html">Module::ICore</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_core_8hpp_source.html#l00019">ICore.hpp:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -167,7 +169,7 @@ $(document).ready(function(){initNavTree('_a_module_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html">API</a></li><li class="navelem"><a class="el" href="dir_bd61ee1abb7e4508c7906a1172c00adb.html">include</a></li><li class="navelem"><a class="el" href="dir_62c6fcae5a810a51dd4644dbb68f62cb.html">Module</a></li><li class="navelem"><a class="el" href="_a_module_8hpp.html">AModule.hpp</a></li>
-    <li class="footer">Generated on Sun Jan 8 2017 18:38:57 for SaltAPI by
+    <li class="footer">Generated on Tue Jan 10 2017 17:44:53 for SaltAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

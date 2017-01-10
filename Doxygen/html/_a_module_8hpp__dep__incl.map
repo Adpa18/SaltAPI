@@ -1,3 +1,11 @@
 <map id="/home/veyrie_f/Documents/SaltAPI/API/include/Module/AModule.hpp" name="/home/veyrie_f/Documents/SaltAPI/API/include/Module/AModule.hpp">
-<area shape="rect" id="node2" href="$_a_core_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/include/Module\l/ACore.hpp" alt="" coords="5,109,192,165"/>
+<area shape="rect" id="node2" href="$_add_event_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/AddEvent.hpp" alt="" coords="267,117,503,158"/>
+<area shape="rect" id="node4" href="$_compress_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/Compress.hpp" alt="" coords="5,117,243,158"/>
+<area shape="rect" id="node6" href="$_hello_world_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/HelloWorld.hpp" alt="" coords="740,117,983,158"/>
+<area shape="rect" id="node8" href="$_a_core_8hpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/include/Module\l/ACore.hpp" alt="" coords="527,109,715,165"/>
+<area shape="rect" id="node10" href="$_a_module_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/src/Module\l/AModule.cpp" alt="" coords="1007,109,1185,165"/>
+<area shape="rect" id="node3" href="$_add_event_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/AddEvent.cpp" alt="" coords="267,221,503,262"/>
+<area shape="rect" id="node5" href="$_compress_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/Compress.cpp" alt="" coords="5,221,243,262"/>
+<area shape="rect" id="node7" href="$_hello_world_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/example/HelloWorld.cpp" alt="" coords="740,221,983,262"/>
+<area shape="rect" id="node9" href="$_a_core_8cpp.html" title="/home/veyrie_f/Documents\l/SaltAPI/API/src/Module\l/ACore.cpp" alt="" coords="532,213,711,269"/>
 </map>

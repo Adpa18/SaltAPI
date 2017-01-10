@@ -10,7 +10,7 @@ var searchData=
   ['m_5fheader',['m_header',['../class_h_t_t_p_1_1_message.html#af0cff1c91dacc688f1f62c910399da1a',1,'HTTP::Message']]],
   ['m_5fhttp_5fversion_5fmajor',['m_http_version_major',['../class_h_t_t_p_1_1_message.html#a4bbe86ae99fe1ed5daed15e7eefd4b2a',1,'HTTP::Message']]],
   ['m_5fhttp_5fversion_5fminor',['m_http_version_minor',['../class_h_t_t_p_1_1_message.html#a1bc6b7592fcda3e55bcc39c11def49f9',1,'HTTP::Message']]],
-  ['m_5flogging',['m_logging',['../class_module_1_1_a_core.html#a64947d2a2f830f69420739217a7f679c',1,'Module::ACore']]],
+  ['m_5flogger',['m_logger',['../class_module_1_1_a_core.html#a647c089e75b2ae5d0b99ea8ad5f000d2',1,'Module::ACore']]],
   ['m_5fmoduleloader',['m_moduleLoader',['../class_module_1_1_a_core.html#aa7cacce07c3c9eda49f3a6b9774c9beb',1,'Module::ACore']]],
   ['m_5fmodules',['m_modules',['../class_a_module_loader.html#a9508771888e661eb101be1d360b56a6a',1,'AModuleLoader']]],
   ['m_5fname',['m_name',['../class_module_1_1_a_module.html#aab5ad1037453a5e4d9ddefb344e24354',1,'Module::AModule']]],

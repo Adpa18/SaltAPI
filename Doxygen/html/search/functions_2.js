@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['del',['Del',['../class_h_t_t_p_1_1_header.html#af470a97426b0758b7827ba3bf8787ecf',1,'HTTP::Header']]]
+  ['compress',['Compress',['../class_compress.html#a51362033ac11f610f1161143f1141c61',1,'Compress']]]
 ];

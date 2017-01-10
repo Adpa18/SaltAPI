@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['_7eacore',['~ACore',['../class_module_1_1_a_core.html#a45676a01f911b14a60b38726c9138452',1,'Module::ACore']]],
-  ['_7eamodule',['~AModule',['../class_module_1_1_a_module.html#aed7bf07dded5236101dc29c267e18f7e',1,'Module::AModule']]],
-  ['_7eamoduleloader',['~AModuleLoader',['../class_a_module_loader.html#aa2e0caf3f093c151b953053833f2baad',1,'AModuleLoader']]],
-  ['_7emessage',['~Message',['../class_h_t_t_p_1_1_message.html#a34e113ce404906a59c96b90b35a344ff',1,'HTTP::Message']]],
-  ['_7eprocessinglist',['~ProcessingList',['../class_h_t_t_p_1_1_processing_list.html#ac7667a6316e5379e909df089ec76a841',1,'HTTP::ProcessingList']]],
-  ['_7erequest',['~Request',['../class_h_t_t_p_1_1_request.html#aff36d1505dc996d9bbb545dde6d64670',1,'HTTP::Request']]],
-  ['_7eresponse',['~Response',['../class_h_t_t_p_1_1_response.html#a0dfed9e152382d97da4c20e21fe2479a',1,'HTTP::Response']]]
+  ['request',['Request',['../class_h_t_t_p_1_1_request.html#ac3903b4bd92515abe20e29afa71a3bec',1,'HTTP::Request']]],
+  ['response',['Response',['../class_h_t_t_p_1_1_response.html#add6f3e95a0976b7984c58255144f3aca',1,'HTTP::Response']]],
+  ['run',['Run',['../class_module_1_1_a_core.html#a0a9c3da62d90049d5266838f7667c595',1,'Module::ACore::Run()'],['../class_module_1_1_i_core.html#a6b0531c62d6598f941e938f80c3f745a',1,'Module::ICore::Run()']]]
 ];
