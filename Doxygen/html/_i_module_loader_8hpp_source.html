@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo64.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SaltAPI
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">An API for the HTTPd / Zia by Salty Studio.</div>
   </td>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -93,7 +95,7 @@ $(document).ready(function(){initNavTree('_i_module_loader_8hpp_source.html','')
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -127,19 +129,16 @@ $(document).ready(function(){initNavTree('_i_module_loader_8hpp_source.html','')
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_i_module_loader.html#ad0af327962e4e417de68e4adab21f13c">IsLoaded</a>(<a class="code" href="class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dc">Module::IModule::Type</a> type) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_module_1_1_i_module.html">Module::IModule</a> *<a class="code" href="class_i_module_loader.html#a274c0810edd3b57bd495e5733b63b3bf">Get</a>(std::string <span class="keyword">const</span> &amp;name) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_module_1_1_i_module.html">Module::IModule</a> *<a class="code" href="class_i_module_loader.html#a9c9fdba4c8df14099d9cb7d62c31fa94">Get</a>(std::string <span class="keyword">const</span> &amp;name) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_module_1_1_i_module.html">Module::IModule</a> *<a class="code" href="class_i_module_loader.html#a274c0810edd3b57bd495e5733b63b3bf">Get</a>(<a class="code" href="class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dc">Module::IModule::Type</a>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_module_1_1_i_module.html">Module::IModule</a> *<a class="code" href="class_i_module_loader.html#a9c9fdba4c8df14099d9cb7d62c31fa94">Get</a>(<a class="code" href="class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dc">Module::IModule::Type</a>) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> T *<a class="code" href="class_i_module_loader.html#a274c0810edd3b57bd495e5733b63b3bf">Get</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif //API_V2_IMODULELOADER_HPP</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif //API_V2_IMODULELOADER_HPP</span></div>
 <div class="ttc" id="class_i_module_loader_html_ad0af327962e4e417de68e4adab21f13c"><div class="ttname"><a href="class_i_module_loader.html#ad0af327962e4e417de68e4adab21f13c">IModuleLoader::IsLoaded</a></div><div class="ttdeci">virtual bool IsLoaded(std::string const &amp;name) const =0</div><div class="ttdoc">check if module is loaded by name </div></div>
-<div class="ttc" id="class_i_module_loader_html_a274c0810edd3b57bd495e5733b63b3bf"><div class="ttname"><a href="class_i_module_loader.html#a274c0810edd3b57bd495e5733b63b3bf">IModuleLoader::Get</a></div><div class="ttdeci">virtual T * Get() const =0</div></div>
 <div class="ttc" id="class_module_1_1_i_module_html"><div class="ttname"><a href="class_module_1_1_i_module.html">Module::IModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_module_8hpp_source.html#l00020">IModule.hpp:20</a></div></div>
+<div class="ttc" id="class_i_module_loader_html_a9c9fdba4c8df14099d9cb7d62c31fa94"><div class="ttname"><a href="class_i_module_loader.html#a9c9fdba4c8df14099d9cb7d62c31fa94">IModuleLoader::Get</a></div><div class="ttdeci">virtual Module::IModule * Get(std::string const &amp;name) const =0</div></div>
 <div class="ttc" id="class_i_module_loader_html_a7b136e0c5f514e241753b8c6e0f5551a"><div class="ttname"><a href="class_i_module_loader.html#a7b136e0c5f514e241753b8c6e0f5551a">IModuleLoader::Unload</a></div><div class="ttdeci">virtual bool Unload(Module::IModule *module)=0</div><div class="ttdoc">unload module by pointer </div></div>
 <div class="ttc" id="_i_module_8hpp_html"><div class="ttname"><a href="_i_module_8hpp.html">IModule.hpp</a></div></div>
 <div class="ttc" id="class_i_module_loader_html"><div class="ttname"><a href="class_i_module_loader.html">IModuleLoader</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_module_loader_8hpp_source.html#l00013">IModuleLoader.hpp:13</a></div></div>
@@ -151,7 +150,7 @@ $(document).ready(function(){initNavTree('_i_module_loader_8hpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html">API</a></li><li class="navelem"><a class="el" href="dir_bd61ee1abb7e4508c7906a1172c00adb.html">include</a></li><li class="navelem"><a class="el" href="_i_module_loader_8hpp.html">IModuleLoader.hpp</a></li>
-    <li class="footer">Generated on Sun Jan 8 2017 18:38:57 for SaltAPI by
+    <li class="footer">Generated on Tue Jan 10 2017 17:44:53 for SaltAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

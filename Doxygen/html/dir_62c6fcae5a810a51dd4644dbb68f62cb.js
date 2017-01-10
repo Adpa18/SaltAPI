@@ -16,6 +16,12 @@ var dir_62c6fcae5a810a51dd4644dbb68f62cb =
     [ "IFileServe.hpp", "_i_file_serve_8hpp.html", [
       [ "IFileServe", "class_module_1_1_i_file_serve.html", "class_module_1_1_i_file_serve" ]
     ] ],
+    [ "IHTTPHandle.hpp", "_i_h_t_t_p_handle_8hpp.html", [
+      [ "IHTTPHandle", "class_module_1_1_i_h_t_t_p_handle.html", "class_module_1_1_i_h_t_t_p_handle" ]
+    ] ],
+    [ "ILogger.hpp", "_i_logger_8hpp.html", [
+      [ "ILogger", "class_module_1_1_i_logger.html", "class_module_1_1_i_logger" ]
+    ] ],
     [ "ILogging.hpp", "_i_logging_8hpp.html", [
       [ "ILogging", "class_module_1_1_i_logging.html", "class_module_1_1_i_logging" ]
     ] ],

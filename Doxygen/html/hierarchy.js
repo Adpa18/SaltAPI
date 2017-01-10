@@ -8,9 +8,17 @@ var hierarchy =
     ] ],
     [ "Module::IFileServe", "class_module_1_1_i_file_serve.html", null ],
     [ "IFileServer", "class_i_file_server.html", null ],
+    [ "Module::IHTTPHandle", "class_module_1_1_i_h_t_t_p_handle.html", [
+      [ "AddEvent", "class_add_event.html", null ],
+      [ "HelloWorld", "class_hello_world.html", null ]
+    ] ],
+    [ "Module::ILogger", "class_module_1_1_i_logger.html", null ],
     [ "Module::ILogging", "class_module_1_1_i_logging.html", null ],
     [ "Module::IModule", "class_module_1_1_i_module.html", [
       [ "Module::AModule", "class_module_1_1_a_module.html", [
+        [ "AddEvent", "class_add_event.html", null ],
+        [ "Compress", "class_compress.html", null ],
+        [ "HelloWorld", "class_hello_world.html", null ],
         [ "Module::ACore", "class_module_1_1_a_core.html", null ]
       ] ]
     ] ],

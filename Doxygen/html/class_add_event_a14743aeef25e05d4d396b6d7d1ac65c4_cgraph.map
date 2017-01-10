@@ -1,0 +1,13 @@
+<map id="AddEvent::Handle" name="AddEvent::Handle">
+<area shape="rect" id="node2" href="$class_module_1_1_i_core.html#afdfc4edf7a100fc407709053df969870" title="Get the module by name from the list in ModuleLoader. " alt="" coords="225,5,359,32"/>
+<area shape="rect" id="node3" href="$class_h_t_t_p_1_1_processing_list.html#a7d51e7351df553439c523a27ff1a3f75" title="push eventFunction after iterator " alt="" coords="217,57,367,98"/>
+<area shape="rect" id="node4" href="$class_compress.html#ab97de6565f0ee412e3b51aedd73fa8dc" title="Compress::UnZip" alt="" coords="229,123,355,149"/>
+<area shape="rect" id="node5" href="$class_h_t_t_p_1_1_processing_list.html#a9a883eb26c776222a1b746f624cadf13" title="HTTP::ProcessingList\l::begin" alt="" coords="217,174,367,215"/>
+<area shape="rect" id="node6" href="$class_h_t_t_p_1_1_processing_list.html#ab693c7b39c75c4851b290243fec70805" title="push eventFunction before iterator " alt="" coords="217,239,367,281"/>
+<area shape="rect" id="node7" href="$class_compress.html#ab55470541d0cf3d8f9672a67e50889c2" title="Compress::Zip" alt="" coords="238,305,346,332"/>
+<area shape="rect" id="node8" href="$class_h_t_t_p_1_1_processing_list.html#ae9e221da82b4aacf1b92f60c460a9c2b" title="HTTP::ProcessingList::end" alt="" coords="202,356,382,383"/>
+<area shape="rect" id="node9" href="$class_h_t_t_p_1_1_message.html#a7cb1839c56c94de329982811ad19f7d4" title="HTTP::Message::GetHeader" alt="" coords="197,407,387,433"/>
+<area shape="rect" id="node10" href="$class_h_t_t_p_1_1_header.html#a16904eb03eda76a90b4ae162b8ab2140" title="HTTP::Header::Add" alt="" coords="223,457,361,484"/>
+<area shape="rect" id="node11" href="$class_h_t_t_p_1_1_message.html#a8ff246ab4894e28f8ba0811d5e6db81e" title="set body " alt="" coords="204,508,380,535"/>
+<area shape="rect" id="node12" href="$class_h_t_t_p_1_1_response.html#a349b9f30cf9c705c0dfbe5a7dda54984" title="set code " alt="" coords="181,559,403,585"/>
+</map>

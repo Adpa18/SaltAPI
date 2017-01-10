@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo64.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">SaltAPI
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">An API for the HTTPd / Zia by Salty Studio.</div>
   </td>
@@ -96,7 +97,7 @@ $(document).ready(function(){initNavTree('class_i_module_loader.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,17 +116,16 @@ $(document).ready(function(){initNavTree('class_i_module_loader.html','');});
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_i_module_loader.html#a9c9fdba4c8df14099d9cb7d62c31fa94">Get</a>(std::string const &amp;name) const =0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_i_module_loader.html#a404556f0fea58fae7b31e2236ba631b0">Get</a>(Module::IModule::Type) const =0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_i_module_loader.html#a274c0810edd3b57bd495e5733b63b3bf">Get</a>() const =0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_i_module_loader.html#ad0af327962e4e417de68e4adab21f13c">IsLoaded</a>(std::string const &amp;name) const =0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_i_module_loader.html#a9e447c926b1ae664bf3184ba692ff0ae">IsLoaded</a>(Module::IModule::Type type) const =0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_i_module_loader.html#a640eae6fed3dcdd7edb39450f6722f1a">Load</a>(std::string const &amp;path)=0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_i_module_loader.html#a7b136e0c5f514e241753b8c6e0f5551a">Unload</a>(Module::IModule *module)=0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_i_module_loader.html#ad0af327962e4e417de68e4adab21f13c">IsLoaded</a>(std::string const &amp;name) const =0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_i_module_loader.html#a9e447c926b1ae664bf3184ba692ff0ae">IsLoaded</a>(Module::IModule::Type type) const =0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_i_module_loader.html#a640eae6fed3dcdd7edb39450f6722f1a">Load</a>(std::string const &amp;path)=0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_i_module_loader.html#a7b136e0c5f514e241753b8c6e0f5551a">Unload</a>(Module::IModule *module)=0</td><td class="entry"><a class="el" href="class_i_module_loader.html">IModuleLoader</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 8 2017 18:38:57 for SaltAPI by
+    <li class="footer">Generated on Tue Jan 10 2017 17:44:53 for SaltAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

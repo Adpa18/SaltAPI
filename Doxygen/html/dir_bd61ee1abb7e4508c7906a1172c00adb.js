@@ -5,6 +5,7 @@ var dir_bd61ee1abb7e4508c7906a1172c00adb =
     [ "AModuleLoader.hpp", "_a_module_loader_8hpp.html", [
       [ "AModuleLoader", "class_a_module_loader.html", "class_a_module_loader" ]
     ] ],
+    [ "DllExport.hpp", "_dll_export_8hpp.html", "_dll_export_8hpp" ],
     [ "IModuleLoader.hpp", "_i_module_loader_8hpp.html", [
       [ "IModuleLoader", "class_i_module_loader.html", "class_i_module_loader" ]
     ] ]

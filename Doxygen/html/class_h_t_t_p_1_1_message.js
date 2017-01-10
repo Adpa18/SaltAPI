@@ -1,12 +1,14 @@
 var class_h_t_t_p_1_1_message =
 [
     [ "Message", "class_h_t_t_p_1_1_message.html#afe02799614db14d7dbb59b1b0d0ae857", null ],
-    [ "~Message", "class_h_t_t_p_1_1_message.html#a34e113ce404906a59c96b90b35a344ff", null ],
-    [ "Body", "class_h_t_t_p_1_1_message.html#a2169fa830f9c622ebc64a73ab83844f0", null ],
-    [ "GetHeader", "class_h_t_t_p_1_1_message.html#acf620a7427b94a956cfbfd309eb14987", null ],
+    [ "~Message", "class_h_t_t_p_1_1_message.html#a752cf9f7303839d1096a334c6ebf6272", null ],
+    [ "GetBody", "class_h_t_t_p_1_1_message.html#a99a349bf7eadadf5639dfbd47ef760dc", null ],
+    [ "GetHeader", "class_h_t_t_p_1_1_message.html#a7cb1839c56c94de329982811ad19f7d4", null ],
     [ "GetHTTPVersion", "class_h_t_t_p_1_1_message.html#a91d85d0dc1247a0983ca31cd25e84c2a", null ],
     [ "GetSocket", "class_h_t_t_p_1_1_message.html#a3629a4bb582e42804b38c7f63a4969cb", null ],
-    [ "setHTTPVersion", "class_h_t_t_p_1_1_message.html#a59d2b5053b7b0e6e426f4e32f1066270", null ],
+    [ "SetBody", "class_h_t_t_p_1_1_message.html#a8ff246ab4894e28f8ba0811d5e6db81e", null ],
+    [ "SetBody", "class_h_t_t_p_1_1_message.html#a34ec932856e5d7e535d47b3e37d32f64", null ],
+    [ "SetHTTPVersion", "class_h_t_t_p_1_1_message.html#a423cd6d2a2d86d9711719459877958f5", null ],
     [ "m_body", "class_h_t_t_p_1_1_message.html#a6cb2053fbfa08a3d25679d839c4786e7", null ],
     [ "m_communicationSession", "class_h_t_t_p_1_1_message.html#af2e8e03bf9aae50fba9933898b1e3f51", null ],
     [ "m_content_length", "class_h_t_t_p_1_1_message.html#a759a9cdf7d2b7e01119908bdf3de8ff9", null ],

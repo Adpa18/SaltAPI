@@ -1,3 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_module_1_1_i_network.html" title="Module::INetwork" alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node1" href="$class_module_1_1_i_core.html" title="Module::ICore" alt="" coords="197,5,301,32"/>
+<area shape="rect" id="node2" href="$class_module_1_1_a_core.html" title="Module::ACore" alt="" coords="373,5,483,32"/>
+<area shape="rect" id="node3" href="$class_module_1_1_i_h_t_t_p_handle.html" title="Module::IHTTPHandle" alt="" coords="173,145,325,172"/>
+<area shape="rect" id="node4" href="$class_add_event.html" title="AddEvent" alt="" coords="389,107,467,133"/>
+<area shape="rect" id="node5" href="$class_hello_world.html" title="HelloWorld" alt="" coords="385,157,471,184"/>
+<area shape="rect" id="node6" href="$class_module_1_1_i_module.html" title="Module::IModule" alt="" coords="6,69,125,96"/>
+<area shape="rect" id="node7" href="$class_module_1_1_a_module.html" title="Module::AModule" alt="" coords="188,69,311,96"/>
+<area shape="rect" id="node8" href="$class_compress.html" title="Compress" alt="" coords="387,56,469,83"/>
 </map>

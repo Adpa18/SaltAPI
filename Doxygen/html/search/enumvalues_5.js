@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['info',['Info',['../class_module_1_1_i_logging.html#ab54df833eabec212bc268e23b44de1fda3eca341e54ce13ca4d837587c289dcd8',1,'Module::ILogging']]]
+  ['http',['HTTP',['../class_module_1_1_i_module.html#acde96227fba125dc2c7f85e7675a05dca648a185e99db1fcf5511f617c69febd9',1,'Module::IModule']]]
 ];

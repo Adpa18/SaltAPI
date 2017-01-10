@@ -6,6 +6,6 @@
 <area shape="rect" id="node6" href="$class_module_1_1_i_network.html" title="Module::INetwork" alt="" coords="236,151,361,177"/>
 <area shape="rect" id="node7" href="$class_i_module_loader.html" title="IModuleLoader" alt="" coords="245,201,352,228"/>
 <area shape="rect" id="node8" href="$class_i_config.html" title="This class is for the config It&#39;s use to store a pointer of the config in the Core You have to dynami..." alt="" coords="267,252,331,279"/>
-<area shape="rect" id="node9" href="$class_module_1_1_i_logging.html" title="Module::ILogging" alt="" coords="238,303,359,329"/>
+<area shape="rect" id="node9" href="$class_module_1_1_i_logger.html" title="Module::ILogger" alt="" coords="241,303,356,329"/>
 <area shape="rect" id="node10" href="$class_module_1_1_i_file_serve.html" title="Module::IFileServe" alt="" coords="233,353,364,380"/>
 </map>
