@@ -116,5 +116,5 @@ Ce module peut donc ajouter un appel au module de décompression après lui dans
 Comme ceci:
 
 ```cpp
-pl->pushAfter(std::bind(&IHTTPHandle::Handle, dynamic_cast<IHTTPHandle>(m_core.Get("DecompressionModule"))), pl->begin());
+pl->pushAfter(std::bind(&IHTTPHandle::Handle, dynamic_cast<IHTTPHandle *>(m_core.Get("DecompressionModule"))), pl->begin());
 ```
