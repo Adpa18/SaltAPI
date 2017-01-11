@@ -6,6 +6,7 @@
 #define API_V2_ICONFIGLOADER_HPP
 
 #include <string>
+#include "Config/IConfig.hpp"
 
 /*! @class IConfig
  * @brief This class is for the config
@@ -15,7 +16,7 @@
  * @example usage dynamic_cast<JSON::Object>(config_ptr)
  *
  */
-class IConfig {};
+
 
 namespace Module {
     /*! @class IConfigLoader
@@ -28,7 +29,7 @@ namespace Module {
          * @param path of the module
          * @return pointer on IConfig
          */
-        virtual IConfig *LoadConfig(std::string const &path) = 0;
+        virtual Config::IConfig *LoadConfig(std::string const &path) = 0;
     };
 }
 
