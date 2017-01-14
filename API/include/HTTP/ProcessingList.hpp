@@ -51,33 +51,33 @@ namespace HTTP {
          */
         EventFunctionList::iterator end();
 
-        /*! @fn bool push(EventFunction eventFunction)
+        /*! @fn EventFunctionList::iterator push(EventFunction eventFunction)
          * @brief push back eventFunction
          * @param eventFunction
          * @return
          */
-        bool push(EventFunction eventFunction);
+        EventFunctionList::iterator push(EventFunction eventFunction);
 
 
-        /*! @fn bool pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref)
+        /*! @fn EventFunctionList::iterator pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref)
          * @brief push eventFunction before iterator
          * @param eventFunction
          * @param ref
-         * @return
+         * @return iterator of new eventFunction
          */
-        bool pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref);
+        EventFunctionList::iterator pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref);
 
-        /*! @fn bool pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref)
+        /*! @fn EventFunctionList::iterator pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref)
         * @brief push eventFunction after iterator
         * @param eventFunction
         * @param ref
-        * @return
+        * @return iterator of new eventFunction
         */
-        bool pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref);
+        EventFunctionList::iterator pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref);
 
         /*! @fn bool next() const
          * @brief pop current event and call next event
-         * @return
+         * @return iterator of new eventFunction
          */
         bool next(Request *req, Response *res);
     };

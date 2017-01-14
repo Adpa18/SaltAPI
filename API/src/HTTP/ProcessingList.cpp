@@ -26,20 +26,18 @@ namespace HTTP {
         return m_events.end();
     }
 
-    bool ProcessingList::push(EventFunction eventFunction) {
+    EventFunctionList::iterator ProcessingList::push(EventFunction eventFunction) {
         m_events.push_back(eventFunction);
-        return true;
+        return m_events.end();
     }
 
-    bool ProcessingList::pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref) {
-        m_events.insert(ref, eventFunction);
-        return true;
+    EventFunctionList::iterator ProcessingList::pushBefore(EventFunction eventFunction, EventFunctionList::const_iterator ref) {
+        return m_events.insert(ref, eventFunction);
     }
 
 
-    bool ProcessingList::pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref) {
-        m_events.insert(++ref, eventFunction);
-        return true;
+    EventFunctionList::iterator ProcessingList::pushAfter(EventFunction eventFunction, EventFunctionList::const_iterator ref) {
+        return m_events.insert(++ref, eventFunction);
     }
 
     bool ProcessingList::next(Request *req, Response *res) {
