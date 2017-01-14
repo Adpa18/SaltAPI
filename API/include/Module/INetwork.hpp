@@ -19,6 +19,8 @@ namespace Module {
      */
     class INetwork {
     public:
+        virtual ~INetwork() {}
+        
         /*! @fn bool Start(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)
          *
          * @param req the default request from the core
