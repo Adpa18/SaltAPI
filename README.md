@@ -118,3 +118,21 @@ Comme ceci:
 ```cpp
 pl->pushAfter(std::bind(&IHTTPHandle::Handle, dynamic_cast<IHTTPHandle *>(m_core.Get("DecompressionModule"))), pl->begin());
 ```
+
+### Organisation des fichiers
+
+```text
+httpd
+httpd_config.json
+modules/
+	core.dll
+	configLoader.dll
+	fileServe.dll
+	logger.dll
+	ssl.dll
+	network.dll
+	HTTPParser.dll
+	HTTPRequestHeaderInspector.dll
+	HTTPResponseRepresentation.dll
+	hoMyCGI.dll
+```

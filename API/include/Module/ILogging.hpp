@@ -13,6 +13,8 @@ namespace Module {
      */
     class ILogging {
     public:
+        virtual ~ILogging() {}
+        
         /*! @enum
          * Log Type
          */

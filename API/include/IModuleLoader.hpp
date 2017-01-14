@@ -12,6 +12,8 @@
  */
 class IModuleLoader {
 public:
+    virtual ~IModuleLoader() {}
+    
     /*! @fn Module::IModule *Load(std::string const &path)
      * @brief load module by path
      * @param path

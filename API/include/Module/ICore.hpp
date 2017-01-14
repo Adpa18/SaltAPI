@@ -18,6 +18,8 @@ namespace Module {
      */
     class ICore {
     public:
+        virtual ~ICore() {}
+        
         /*! @fn bool Run(std::vector<std::string> const &opts, IModuleLoader *moduleLoader)
          *
          * @param opts arguments from main

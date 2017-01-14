@@ -10,6 +10,7 @@
 namespace Config {
     class IConfig {
     public:
+        virtual ~IConfig() {}
         virtual Value       &operator[](std::string const &key) = 0;
         virtual Value       const &operator[](std::string const &key) const = 0;
     };

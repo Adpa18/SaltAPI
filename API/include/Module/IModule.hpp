@@ -19,6 +19,8 @@ namespace Module {
      */
     class IModule {
     public:
+        virtual ~IModule() {}
+        
         /*! @enum Type
          * Type of a module
          */

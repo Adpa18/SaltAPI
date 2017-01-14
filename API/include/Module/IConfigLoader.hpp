@@ -24,6 +24,8 @@ namespace Module {
      */
     class IConfigLoader {
     public:
+        virtual ~IConfigLoader() {}
+        
         /*! @fn IConfig *LoadConfig(std::string const &path)
          * @brief LoadConfig from file
          * @param path of the module

@@ -19,6 +19,8 @@ namespace Module {
      */
     class INetwork {
     public:
+        virtual ~INetwork() {}
+        
         /*! @fn bool Start(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)
          *
          * @param req the default request from the core
@@ -28,20 +30,17 @@ namespace Module {
          */
         virtual bool Start(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl) = 0;
 
-        /*! @fn bool OnRequest()
-         * @brief this function is called when a request is received
-         * @return
+        /*! @fn void Poll()
+         * @brief this function is used to handle client just one time and return just before
+         * @return void
          */
-        virtual bool OnRequest() = 0;
+        virtual void Poll() = 0;
 
-        /*! @fn bool Send(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)
-         *
-         * @param req the request from the previous module
-         * @param res the response from the previous module
-         * @param pl the processsingList from the previous module
+        /*! @fn void Run()
+         * @brief this function is used to handle client and never return
          * @return
          */
-        virtual bool Send(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl) = 0;
+        virtual void Run() = 0;
     };
 }
 
