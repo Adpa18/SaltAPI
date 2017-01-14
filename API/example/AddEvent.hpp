@@ -11,18 +11,19 @@
 
 extern "C"
 {
-class EXPORT AddEvent : public Module::IHTTPHandle, public Module::AModule {
-public:
-    AddEvent(Module::ICore &core);
+    class EXPORT AddEvent : public Module::AModule, public Module::IHTTPHandle {
+    public:
+        AddEvent(Module::ICore &core);
 
-    virtual ~AddEvent();
+        virtual ~AddEvent();
 
-public:
-    bool Handle(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl);
+    public:
+        bool Handle(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl);
 
-public:
-    Module::IModule *GetModule(Module::ICore &core) const override;
-};
+    public:
+        Module::IModule *GetModule(Module::ICore &core) const override;
+    };
+    Module::IModule *LoadModule(Module::ICore &core);
 }
 
 #endif //API_V2_ADDEVENT_HPP

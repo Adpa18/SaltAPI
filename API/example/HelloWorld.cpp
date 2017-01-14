@@ -25,3 +25,7 @@ bool HelloWorld::Handle(HTTP::Request *req, HTTP::Response *res, HTTP::Processin
 Module::IModule* HelloWorld::GetModule(Module::ICore &core) const {
     return new HelloWorld(core);
 }
+
+Module::IModule	*LoadModule(Module::ICore &core) {
+	return new HelloWorld(core);
+}
