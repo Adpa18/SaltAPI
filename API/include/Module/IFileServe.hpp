@@ -14,6 +14,8 @@ namespace Module {
      */
     class IFileServe {
     public:
+        virtual ~IFileServe() {}
+        
         /*! @fn unsigned int GetFileSize(std::string const &path) const
          *
          * @param path of file
