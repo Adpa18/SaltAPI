@@ -20,6 +20,8 @@ namespace Module {
      */
     class IHTTPHandle {
     public:
+        virtual ~IHTTPHandle() {}
+        
         /*! @fn bool Handle(HTTP::Request *req, HTTP::Response *res, HTTP::ProcessingList *pl)
          *
          * @param req the request from the previous module
