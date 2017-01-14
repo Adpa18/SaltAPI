@@ -26,6 +26,6 @@ Module::IModule* HelloWorld::GetModule(Module::ICore &core) const {
     return new HelloWorld(core);
 }
 
-Module::IModule	*CreateModule(Module::ICore &core) {
+Module::IModule	*LoadModule(Module::ICore &core) {
 	return new HelloWorld(core);
 }
