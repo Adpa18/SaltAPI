@@ -24,6 +24,8 @@ extern "C"
     public:
         Module::IModule *GetModule(Module::ICore &core) const override;
     };
+    
+    Module::IModule	*LoadModule(Module::ICore &core);
 }
 
 #endif //API_V2_HELLOWORLD_HPP
